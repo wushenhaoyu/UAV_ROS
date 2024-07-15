@@ -1,16 +1,16 @@
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, TimerAction, IncludeLaunchDescription
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch_ros.actions import Node
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
-    use_sim_time_arg = DeclareLaunchArgument('use_sim_time', default_value = 'False')
+    use_sim_time_arg = DeclareLaunchArgument('use_sim_time', default_value='False')
     pkg_share = FindPackageShare('my_cartographer').find('my_cartographer')
-    rviz_config_dir = os.path.join(pkg_share, 'rviz_config')
+    rviz_config_dir = os.path.join(pkg_share, 'rviz','rviz.rviz')
 
     robot_state_publisher_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([
@@ -79,7 +79,7 @@ def generate_launch_description():
     cartographer_node = Node(
         package='cartographer_ros',
         executable='cartographer_node',
-        parameters = [{'use_sim_time': LaunchConfiguration('use_sim_time')}],
+        parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}],
         arguments=[
             '-configuration_directory', FindPackageShare('cartographer_ros').find('cartographer_ros') + '/configuration_files',
             '-configuration_basename', 'mycartographer_2d.lua'],
@@ -120,6 +120,18 @@ def generate_launch_description():
         output='screen'
     )
 
+    # Nav2 nodes
+    nav2_bringup_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([
+            PathJoinSubstitution([
+                FindPackageShare('nav2_bringup'),
+                'launch',
+                'bringup_launch.py'
+            ])
+        ]),
+        launch_arguments={'use_sim_time': LaunchConfiguration('use_sim_time')}.items()
+    )
+
     return LaunchDescription([
         use_sim_time_arg,
         laser_data_node,
@@ -131,4 +143,5 @@ def generate_launch_description():
         robot_localization_node,
         lslidar_launch,
         amcl_launch,
+        nav2_bringup_launch,
     ])
