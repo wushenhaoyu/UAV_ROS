@@ -1,0 +1,29 @@
+[0.034s] Invoking command in '/home/ubuntu/Desktop/uav_ws/src/build/my_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Desktop/uav_ws/install/uav_description:/home/ubuntu/Desktop/uav_ws/install/nav2_simple_commander:/home/ubuntu/Desktop/uav_ws/install/my_amcl:/home/ubuntu/Desktop/uav_ws/install/imu:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/Desktop/uav_ws/src/build/my_cartographer -- -j4 -l4
+[0.180s] Invoked command in '/home/ubuntu/Desktop/uav_ws/src/build/my_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Desktop/uav_ws/install/uav_description:/home/ubuntu/Desktop/uav_ws/install/nav2_simple_commander:/home/ubuntu/Desktop/uav_ws/install/my_amcl:/home/ubuntu/Desktop/uav_ws/install/imu:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/Desktop/uav_ws/src/build/my_cartographer -- -j4 -l4
+[0.352s] Invoking command in '/home/ubuntu/Desktop/uav_ws/src/build/my_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Desktop/uav_ws/install/uav_description:/home/ubuntu/Desktop/uav_ws/install/nav2_simple_commander:/home/ubuntu/Desktop/uav_ws/install/my_amcl:/home/ubuntu/Desktop/uav_ws/install/imu:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/Desktop/uav_ws/src/build/my_cartographer
+[0.434s] -- Install configuration: ""
+[0.434s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/ament_index/resource_index/package_run_dependencies/my_cartographer
+[0.435s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/ament_index/resource_index/parent_prefix_path/my_cartographer
+[0.435s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/my_cartographer/environment/ament_prefix_path.sh
+[0.441s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/my_cartographer/environment/ament_prefix_path.dsv
+[0.447s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/my_cartographer/environment/path.sh
+[0.449s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/my_cartographer/environment/path.dsv
+[0.449s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/my_cartographer/local_setup.bash
+[0.456s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/my_cartographer/local_setup.sh
+[0.460s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/my_cartographer/local_setup.zsh
+[0.460s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/my_cartographer/local_setup.dsv
+[0.461s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/my_cartographer/package.dsv
+[0.461s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/ament_index/resource_index/packages/my_cartographer
+[0.461s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/my_cartographer/cmake/my_cartographerConfig.cmake
+[0.461s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/my_cartographer/cmake/my_cartographerConfig-version.cmake
+[0.462s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/my_cartographer/package.xml
+[0.462s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/my_cartographer/config
+[0.462s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/my_cartographer/config/nav2_params.yaml
+[0.488s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/my_cartographer/config/efk.yaml
+[0.488s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/my_cartographer/config/map_server_params.yaml
+[0.488s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/my_cartographer/launch
+[0.488s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/my_cartographer/launch/test.launch.py
+[0.488s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/my_cartographer/launch/cartographer_2d.launch.py
+[0.489s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/my_cartographer/rviz
+[0.489s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/my_cartographer/share/my_cartographer/rviz/rviz.rviz
+[0.491s] Invoked command in '/home/ubuntu/Desktop/uav_ws/src/build/my_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Desktop/uav_ws/install/uav_description:/home/ubuntu/Desktop/uav_ws/install/nav2_simple_commander:/home/ubuntu/Desktop/uav_ws/install/my_amcl:/home/ubuntu/Desktop/uav_ws/install/imu:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/Desktop/uav_ws/src/build/my_cartographer

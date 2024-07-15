@@ -1,0 +1,40 @@
+# ekf.yaml
+
+ekf:
+  # State estimation parameters
+  process_noise_covariance: [0.001, 0.0, 0.0, 0.0, 0.0, 0.0,
+                            0.0, 0.001, 0.0, 0.0, 0.0, 0.0,
+                            0.0, 0.0, 0.001, 0.0, 0.0, 0.0,
+                            0.0, 0.0, 0.001, 0.0, 0.0, 0.0,
+                            0.0, 0.0, 0.001, 0.0, 0.0, 0.0,
+                            0.0, 0.0, 0.001, 0.001]
+  measurement_noise_covariance: [0.001, 0.0, 0.0, 0.0, 0.0, 0.0,
+                                 0.0, 0.001, 0.0, 0.0, 0.0, 0.0,
+                                 0.0, 0.0, 0.001, 0.0, 0.0, 0.0,
+                                 0.0, 0.0, 0.001, 0.0, 0.0, 0.0,
+                                 0.0, 0.0, 0.001, 0.0, 0.0, 0.0,
+                                 0.0, 0.0, 0.001, 0.001]
+
+  # Sensor fusion parameters
+  imu0: /imu
+  imu0_config: [true, true, true,   # enable IMU orientation
+                true, true, true,   # enable IMU angular velocity
+                true, true, true]   # enable IMU linear acceleration
+
+  # Robot state output
+  publish_tf: true
+  transform_time_offset: 0.0
+  transform_timeout: 0.01
+  base_frame_id: base_link
+  world_frame_id: map
+
+  # State publisher
+  state_pub_queue_size: 10
+  state_pub_rate: 10.0
+
+  # Odometry publisher
+  odom_frame_id: odom
+  enable_odom_pub: true
+  enable_odom_tf_pub: true
+  publish_acceleration: false
+  publish_velocity: false
