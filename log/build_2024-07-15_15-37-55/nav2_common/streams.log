@@ -1,0 +1,64 @@
+[0.085s] Invoking command in '/home/ubuntu/Desktop/uav_ws/src/build/nav2_common': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Desktop/uav_ws/install/uav_description:/home/ubuntu/Desktop/uav_ws/install/nav2_simple_commander:/home/ubuntu/Desktop/uav_ws/install/my_amcl:/home/ubuntu/Desktop/uav_ws/install/imu:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ubuntu/Desktop/uav_ws/src/src/navigation2/nav2_common -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Desktop/uav_ws/src/install/nav2_common
+[0.374s] -- Found ament_cmake_core: 2.6.0 (/opt/ros/rolling/share/ament_cmake_core/cmake)
+[1.064s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.516s] -- Found ament_cmake_python: 2.6.0 (/opt/ros/rolling/share/ament_cmake_python/cmake)
+[2.569s] -- Configuring done (2.4s)
+[2.588s] -- Generating done (0.0s)
+[2.588s] -- Build files have been written to: /home/ubuntu/Desktop/uav_ws/src/build/nav2_common
+[2.596s] Invoked command in '/home/ubuntu/Desktop/uav_ws/src/build/nav2_common' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Desktop/uav_ws/install/uav_description:/home/ubuntu/Desktop/uav_ws/install/nav2_simple_commander:/home/ubuntu/Desktop/uav_ws/install/my_amcl:/home/ubuntu/Desktop/uav_ws/install/imu:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ubuntu/Desktop/uav_ws/src/src/navigation2/nav2_common -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Desktop/uav_ws/src/install/nav2_common
+[2.597s] Invoking command in '/home/ubuntu/Desktop/uav_ws/src/build/nav2_common': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Desktop/uav_ws/install/uav_description:/home/ubuntu/Desktop/uav_ws/install/nav2_simple_commander:/home/ubuntu/Desktop/uav_ws/install/my_amcl:/home/ubuntu/Desktop/uav_ws/install/imu:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/Desktop/uav_ws/src/build/nav2_common -- -j4 -l4
+[2.983s] Built target ament_cmake_python_copy_nav2_common
+[3.658s] running egg_info
+[3.660s] creating nav2_common.egg-info
+[3.731s] writing nav2_common.egg-info/PKG-INFO
+[3.732s] writing dependency_links to nav2_common.egg-info/dependency_links.txt
+[3.735s] writing top-level names to nav2_common.egg-info/top_level.txt
+[3.736s] writing manifest file 'nav2_common.egg-info/SOURCES.txt'
+[4.087s] reading manifest file 'nav2_common.egg-info/SOURCES.txt'
+[4.089s] writing manifest file 'nav2_common.egg-info/SOURCES.txt'
+[4.258s] Built target ament_cmake_python_build_nav2_common_egg
+[4.305s] Invoked command in '/home/ubuntu/Desktop/uav_ws/src/build/nav2_common' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Desktop/uav_ws/install/uav_description:/home/ubuntu/Desktop/uav_ws/install/nav2_simple_commander:/home/ubuntu/Desktop/uav_ws/install/my_amcl:/home/ubuntu/Desktop/uav_ws/install/imu:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/Desktop/uav_ws/src/build/nav2_common -- -j4 -l4
+[4.464s] Invoking command in '/home/ubuntu/Desktop/uav_ws/src/build/nav2_common': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Desktop/uav_ws/install/uav_description:/home/ubuntu/Desktop/uav_ws/install/nav2_simple_commander:/home/ubuntu/Desktop/uav_ws/install/my_amcl:/home/ubuntu/Desktop/uav_ws/install/imu:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/Desktop/uav_ws/src/build/nav2_common
+[4.504s] -- Install configuration: ""
+[4.508s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/share/nav2_common/environment/pythonpath.sh
+[4.509s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/share/nav2_common/environment/pythonpath.dsv
+[4.509s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/lib/python3.12/site-packages/nav2_common-1.3.1-py3.12.egg-info
+[4.509s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/lib/python3.12/site-packages/nav2_common-1.3.1-py3.12.egg-info/SOURCES.txt
+[4.510s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/lib/python3.12/site-packages/nav2_common-1.3.1-py3.12.egg-info/dependency_links.txt
+[4.510s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/lib/python3.12/site-packages/nav2_common-1.3.1-py3.12.egg-info/PKG-INFO
+[4.510s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/lib/python3.12/site-packages/nav2_common-1.3.1-py3.12.egg-info/top_level.txt
+[4.511s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/lib/python3.12/site-packages/nav2_common
+[4.511s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch
+[4.511s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch/has_node_params.py
+[4.511s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch/replace_string.py
+[4.511s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch/__init__.py
+[4.512s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch/rewritten_yaml.py
+[4.512s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch/parse_multirobot_pose.py
+[4.512s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/lib/python3.12/site-packages/nav2_common/__init__.py
+[4.706s] Listing '/home/ubuntu/Desktop/uav_ws/src/install/nav2_common/lib/python3.12/site-packages/nav2_common'...
+[4.706s] Compiling '/home/ubuntu/Desktop/uav_ws/src/install/nav2_common/lib/python3.12/site-packages/nav2_common/__init__.py'...
+[4.706s] Listing '/home/ubuntu/Desktop/uav_ws/src/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch'...
+[4.707s] Compiling '/home/ubuntu/Desktop/uav_ws/src/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch/__init__.py'...
+[4.707s] Compiling '/home/ubuntu/Desktop/uav_ws/src/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch/has_node_params.py'...
+[4.707s] Compiling '/home/ubuntu/Desktop/uav_ws/src/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch/parse_multirobot_pose.py'...
+[4.707s] Compiling '/home/ubuntu/Desktop/uav_ws/src/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch/replace_string.py'...
+[4.708s] Compiling '/home/ubuntu/Desktop/uav_ws/src/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch/rewritten_yaml.py'...
+[4.737s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/share/ament_index/resource_index/package_run_dependencies/nav2_common
+[4.737s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/share/ament_index/resource_index/parent_prefix_path/nav2_common
+[4.737s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/share/nav2_common/environment/ament_prefix_path.sh
+[4.738s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/share/nav2_common/environment/ament_prefix_path.dsv
+[4.739s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/share/nav2_common/environment/path.sh
+[4.739s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/share/nav2_common/environment/path.dsv
+[4.740s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/share/nav2_common/local_setup.bash
+[4.740s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/share/nav2_common/local_setup.sh
+[4.741s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/share/nav2_common/local_setup.zsh
+[4.741s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/share/nav2_common/local_setup.dsv
+[4.741s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/share/nav2_common/package.dsv
+[4.741s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/share/ament_index/resource_index/packages/nav2_common
+[4.741s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/share/nav2_common/cmake/nav2_common-extras.cmake
+[4.741s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/share/nav2_common/cmake/nav2_commonConfig.cmake
+[4.741s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/share/nav2_common/cmake/nav2_commonConfig-version.cmake
+[4.741s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/share/nav2_common/package.xml
+[4.742s] -- Up-to-date: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/share/nav2_common/cmake
+[4.743s] -- Installing: /home/ubuntu/Desktop/uav_ws/src/install/nav2_common/share/nav2_common/cmake/nav2_package.cmake
+[4.744s] Invoked command in '/home/ubuntu/Desktop/uav_ws/src/build/nav2_common' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Desktop/uav_ws/install/uav_description:/home/ubuntu/Desktop/uav_ws/install/nav2_simple_commander:/home/ubuntu/Desktop/uav_ws/install/my_amcl:/home/ubuntu/Desktop/uav_ws/install/imu:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/Desktop/uav_ws/src/build/nav2_common

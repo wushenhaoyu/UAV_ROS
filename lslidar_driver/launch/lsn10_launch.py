@@ -10,7 +10,6 @@ import lifecycle_msgs.msg
 import os
 
 def generate_launch_description():
-    use_sim_time_arg = DeclareLaunchArgument('use_sim_time', default_value='False')
     driver_dir = os.path.join(get_package_share_directory('lslidar_driver'), 'params','lidar_uart_ros2', 'lsn10.yaml')
                      
     driver_node = LifecycleNode(package='lslidar_driver',
@@ -19,11 +18,10 @@ def generate_launch_description():
                                 output='screen',
                                 emulate_tty=True,
                                 namespace='',
-                                parameters=[driver_dir,{'use_sim_time': LaunchConfiguration('use_sim_time')}],
+                                parameters=[driver_dir],
                                 )
 
     return LaunchDescription([
-         use_sim_time_arg,
         driver_node,
     ])
 

@@ -26,7 +26,7 @@
 #include <sys/file.h>
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "rclcpp/clock.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "lslidar_driver/lslidar_driver.h"
 #include <functional>
@@ -994,7 +994,6 @@ namespace lslidar_driver
 					{
 						scan->header.stamp = this->now(); // timestamp will obtained from sweep data stamp
 					}
-
 					scan->angle_min = 0;
 					scan->angle_max = 2 * M_PI;
 					scan->angle_increment = 2 * M_PI / (double)(count_num);
@@ -1141,7 +1140,8 @@ namespace lslidar_driver
 					}
 					else
 					{
-						scan->header.stamp = this->now(); // timestamp will obtained from sweep data stamp
+						scan->header.stamp = this->get_clock()->now(); // 获取当前时间戳
+// timestamp will obtained from sweep data stamp
 					}
 
 					if (angle_able_max > 360)

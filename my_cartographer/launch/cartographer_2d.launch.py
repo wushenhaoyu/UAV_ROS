@@ -8,9 +8,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
-    use_sim_time_arg = DeclareLaunchArgument('use_sim_time', default_value='False')
-    use_sim_time = LaunchConfiguration('use_sim_time')
-
+    use_sim_time_arg = DeclareLaunchArgument('use_sim_time', default_value = 'False')
     pkg_share = FindPackageShare('my_cartographer').find('my_cartographer')
     rviz_config_dir = os.path.join(pkg_share, 'rviz_config')
 
@@ -22,7 +20,6 @@ def generate_launch_description():
                 'uav_urdf.launch.py'
             ])
         ]),
-        launch_arguments={'use_sim_time': use_sim_time}.items()
     )
 
     lslidar_launch = IncludeLaunchDescription(
@@ -33,7 +30,6 @@ def generate_launch_description():
                 'lsn10_launch.py'
             ])  
         ]),
-        launch_arguments={'use_sim_time': use_sim_time}.items()
     )
 
     amcl_launch = IncludeLaunchDescription(
@@ -44,7 +40,7 @@ def generate_launch_description():
                 'my_amcl.launch.py'
             ])
         ]),
-        launch_arguments={'use_sim_time': use_sim_time}.items()
+
     )
 
     robot_localization_node = Node(
@@ -53,7 +49,6 @@ def generate_launch_description():
         name='ekf_filter_node',
         output='screen',
         parameters=[
-            {'use_sim_time': use_sim_time},
             {'frequency': 30.0},
             {'sensor_timeout': 0.1},
             {'two_d_mode': True},
@@ -84,6 +79,7 @@ def generate_launch_description():
     cartographer_node = Node(
         package='cartographer_ros',
         executable='cartographer_node',
+        parameters = [{'use_sim_time': LaunchConfiguration('use_sim_time')}],
         arguments=[
             '-configuration_directory', FindPackageShare('cartographer_ros').find('cartographer_ros') + '/configuration_files',
             '-configuration_basename', 'mycartographer_2d.lua'],
@@ -92,21 +88,25 @@ def generate_launch_description():
             ('imu', 'imu'),
             ('odom', '/odometry/filtered')],
         output='screen',
-        parameters=[{'use_sim_time': use_sim_time}]
     )
 
     imu_data_node = Node(
         package='imu',
         executable='imu_serial',
         output='screen',
-        parameters=[{'use_sim_time': use_sim_time}]
+    )
+
+    laser_data_node = Node(
+        package='my_laser',
+        executable='laser_timestamp_publisher_node',
+        output='screen',
     )
 
     cartographer_occupancy_grid_node = Node(
         package='cartographer_ros',
         executable='cartographer_occupancy_grid_node',
         parameters=[
-            {'use_sim_time': use_sim_time},
+            {'use_sim_time': True},
             {'resolution': 0.05}
         ],
     )
@@ -117,21 +117,18 @@ def generate_launch_description():
         executable='rviz2',
         name='rviz2',
         arguments=['-d', rviz_config_dir],
-        output='screen',
-        parameters=[{'use_sim_time': use_sim_time}]
+        output='screen'
     )
 
     return LaunchDescription([
         use_sim_time_arg,
+        laser_data_node,
         robot_state_publisher_launch,
         rviz_node,
         cartographer_node,
         cartographer_occupancy_grid_node,
         imu_data_node,
         robot_localization_node,
-        TimerAction(
-            period=2.0,
-            actions=[lslidar_launch]
-        ),
-         amcl_launch,
+        lslidar_launch,
+        amcl_launch,
     ])

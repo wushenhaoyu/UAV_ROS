@@ -7,7 +7,6 @@ from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration
 
 def generate_launch_description():
-    use_sim_time_arg = DeclareLaunchArgument('use_sim_time', default_value='False')
     package_name = 'uav_description'
     urdf_name = "uav.urdf"
 
@@ -25,12 +24,11 @@ def generate_launch_description():
         package='joint_state_publisher_gui',
         executable='joint_state_publisher_gui',
         name='joint_state_publisher_gui',
-        arguments=[urdf_model_path,{'use_sim_time': LaunchConfiguration('use_sim_time')}]
+        arguments=[urdf_model_path]
         )
 
 
     ld.add_action(robot_state_publisher_node)
     ld.add_action(joint_state_publisher_node)
-    ld.add_action(use_sim_time_arg)
 
     return ld

@@ -1,0 +1,15 @@
+[0.084s] Invoking command in '/home/ubuntu/Desktop/uav_ws/src/build/nav_2d_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Desktop/uav_ws/install/uav_description:/home/ubuntu/Desktop/uav_ws/install/nav2_simple_commander:/home/ubuntu/Desktop/uav_ws/install/my_amcl:/home/ubuntu/Desktop/uav_ws/install/imu:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ubuntu/Desktop/uav_ws/src/src/navigation2/nav2_dwb_controller/nav_2d_msgs -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Desktop/uav_ws/src/install/nav_2d_msgs
+[0.832s] -- The C compiler identification is GNU 13.2.0
+[1.791s] -- The CXX compiler identification is GNU 13.2.0
+[2.011s] -- Detecting C compiler ABI info
+[2.471s] -- Detecting C compiler ABI info - done
+[2.488s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.488s] -- Detecting C compile features
+[2.530s] -- Detecting C compile features - done
+[2.582s] -- Detecting CXX compiler ABI info
+[3.123s] -- Detecting CXX compiler ABI info - done
+[3.151s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.155s] -- Detecting CXX compile features
+[3.158s] -- Detecting CXX compile features - done
+[3.185s] -- Found geometry_msgs: 5.4.0 (/opt/ros/rolling/share/geometry_msgs/cmake)
+[3.863s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
